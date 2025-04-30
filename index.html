@@ -49,18 +49,6 @@
         customerid: key1Value,
         customeremail: key2Value
     });
-    // 定期检查全局变量
-    const checkInterval = setInterval(() => {
-        if (window.receivedParams) {
-            console.log('JavaScript 标签已接收到参数值');
-            clearInterval(checkInterval);
-        }
-    }, 100);
-  const paramDisplayElement = document.getElementById('param-display');
-    if (paramDisplayElement) {
-        const computedStyle = window.getComputedStyle(paramDisplayElement);
-        console.log('接收到值之后 #param-display 元素的样式：', computedStyle);
-    }
   </script>
 </body>
 </html>
