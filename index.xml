@@ -19,8 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   document.getElementById('display-key2').textContent = params.get('key2');
 </script>
 <body>
-<h1>GitHub Pages测试页面</h1>
-<p>这是通过GitHub部署的静态页面。</p>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BH32RR5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
