@@ -1,0 +1,5 @@
+# 创建 .nojekyll 文件
+touch .nojekyll
+git add .nojekyll
+git commit -m "Disable Jekyll"
+git push
