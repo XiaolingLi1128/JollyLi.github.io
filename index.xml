@@ -24,10 +24,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
     const params = new URLSearchParams(window.location.search);
     document.getElementById('display-key1').textContent = params.get('key1');
     document.getElementById('display-key2').textContent = params.get('key2');
+    <p>Key1: {{key1}}, Key1: {{key2}}</p>
   </script>
-
-        <section>
-        <p>Key1 and Key2</p>
     </section>
 </body>
 </html>
