@@ -1,3 +1,7 @@
+git add .
+git commit -m "初始化测试页面"
+git push origin main  # 或指定gh-pages分支
+
 <!DOCTYPE html>
 <html>
 <head>
