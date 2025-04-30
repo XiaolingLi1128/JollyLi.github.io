@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Xiaoling测试页面</title>
+<title><h1 style="color: red; font-size: 24px;">Xiaoling测试页面</h1></title>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
@@ -18,7 +18,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
   <div id="display-key2"></div>
 
   <script>
-    // 解析 URL 参数
     const params = new URLSearchParams(window.location.search);
     document.getElementById('display-key1').textContent = params.get('key1');
     document.getElementById('display-key2').textContent = params.get('key2');
