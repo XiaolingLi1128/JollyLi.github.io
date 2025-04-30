@@ -1,11 +1,31 @@
-/* style.css */
-book {
-  display: block;
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid #ccc;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-title {
-  color: blue;
-  font-weight: bold;
+ 
+header, nav, section, footer {
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+ 
+header {
+    text-align: center;
+}
+ 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+ 
+section {
+    margin-top: 20px;
 }
