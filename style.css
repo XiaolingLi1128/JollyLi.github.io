@@ -1,0 +1,11 @@
+/* style.css */
+book {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+title {
+  color: blue;
+  font-weight: bold;
+}
