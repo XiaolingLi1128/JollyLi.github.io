@@ -50,6 +50,15 @@
         customeremail: key2Value
     });
 </script>
+<script>
+    // 定期检查全局变量
+    const checkInterval = setInterval(() => {
+        if (window.receivedParams) {
+            console.log('JavaScript 标签已接收到参数值');
+            clearInterval(checkInterval);
+        }
+    }, 100);
+</script>
 </body>
 </html>
  
