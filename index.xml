@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 <head>
-    <title>This is the page to show the value of Key1 and Key2:</title>
-        
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5BH32RR5');</script>
+  <title>URL 参数展示示例</title>
+  <!-- Google Tag Manager (Head 部分) -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5BH32RR5');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BH32RR5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BH32RR5"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
-  <div id="display-key1"></div>
-  <div id="display-key2"></div>
-    <div id="params"></div>
-
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.getElementById('display-key1').textContent = params.get('key1');
-    document.getElementById('display-key2').textContent = params.get('key2');
-    <p>Key1: {{key1}}, Key1: {{key2}}</p>
-  </script>
-    </section>
+  <h1>URL 参数值：</h1>
+  <!-- 占位元素用于展示参数 -->
+  <div id="param-display">
+    <p>key1: <span id="key1">未捕获值</span></p>
+    <p>key2: <span id="key2">未捕获值</span></p>
+  </div>
 </body>
 </html>
