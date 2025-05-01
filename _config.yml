@@ -1,0 +1,4 @@
+# 允许被 GTM 预览工具嵌入
+sendfile_headers:
+  "X-Frame-Options": "ALLOW-FROM https://tagassistant.google.com"
+  "Content-Security-Policy": "frame-ancestors 'self' https://tagassistant.google.com"
