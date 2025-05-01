@@ -28,6 +28,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     document.getElementById('key1').textContent = key1Value;
     document.getElementById('key2').textContent = key2Value;
 
+    // 推送参数到数据层
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        'event': 'url_parameters_loaded',
+        'key1': key1,
+        'key2': key2
+    });
   
   </script>
 
