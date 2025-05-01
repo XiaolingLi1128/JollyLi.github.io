@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>  
-<script>
-  // 解析 URL 参数
-  const urlParams = new URLSearchParams(window.location.search);
-  const key1Value = urlParams.get('key1');  // 例如：https://your-site.com/?key1=123&key2=user@example.com
-  const key2Value = urlParams.get('key2');
-
-  // 将参数存入数据层
-  window.dataLayer = window.dataLayer || [];
-  dataLayer.push({
-    'event': 'ire_identify',  // 定义触发事件
-    'customerid': key1Value,
-    'customeremail': key2Value
-  });
-
-</script>
-
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -44,17 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     document.getElementById('key1').textContent = key1Value;
     document.getElementById('key2').textContent = key2Value;
 
-<script>
-  (function(a,b,c,d,e,f,g){
-    e['ire_o']=c;
-    e[c]=e[c]||function(){(e[c].a=e[c].a||[]).push(arguments)};
-    f=d.createElement(b);
-    g=d.getElementsByTagName(b)[0];
-    f.async=1;
-    f.src=a;
-    g.parentNode.insertBefore(f,g);
-  })('https://utt.impactcdn.com/A2788006-de3d-4011-a57c-c4737e79de0365535.js','script','ire',document,window);
-</script>
   
   </script>
 </body>
